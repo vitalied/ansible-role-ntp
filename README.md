@@ -91,7 +91,7 @@ Role Variables
 <li>::1</li>
 </ul></td>
 <td align="left"></td>
-<td align="left">Access control configuration; see <a href="http://support.ntp.org/bin/view/Support/AccessRestrictions" class="uri">http://support.ntp.org/bin/view/Support/AccessRestrictions</a> for details.</td>
+<td align="left">Access control configuration; see <a href="http://support.ntp.org/bin/view/Support/AccessRestrictions">web page</a> for details.</td>
 </tr>
 </tbody>
 </table>
