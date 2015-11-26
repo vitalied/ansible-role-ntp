@@ -31,3 +31,13 @@
     - { src: 'etc/ntp.conf.j2', dest: '/etc/ntp.conf',  owner: 'root', group: 'root', mode: '0644' }
   notify: restart ntp
   tags: hswong3i.ntp
+
+- name: enable incomming connection
+  ufw:
+    to_port={{ item }}
+    proto=tcp
+    rule=allow
+  with_items:
+    - 123
+  notify: restart ntp
+  tags: hswong3i.ntp
