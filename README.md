@@ -60,37 +60,31 @@ Role Variables
 <tr class="even">
 <td align="left">ntp_filegen</td>
 <td align="left">no</td>
+<td align="left"><a href="https://github.com/pantarei/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
 <td align="left"><ul>
-<li>loopstats file loopstats type day enable</li>
-<li>peerstats file peerstats type day enable</li>
-<li>clockstats file clockstats type day enable</li>
+<li><code>[]</code></li>
+<li><code>list</code></li>
 </ul></td>
-<td align="left"></td>
 <td align="left">Configures setting of generation file set name.</td>
 </tr>
 <tr class="odd">
 <td align="left">ntp_server</td>
 <td align="left">yes</td>
+<td align="left"><a href="https://github.com/pantarei/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
 <td align="left"><ul>
-<li>0.ubuntu.pool.ntp.org</li>
-<li>1.ubuntu.pool.ntp.org</li>
-<li>2.ubuntu.pool.ntp.org</li>
-<li>3.ubuntu.pool.ntp.org</li>
-<li>ntp.ubuntu.com</li>
+<li><code>[]</code></li>
+<li><code>list</code></li>
 </ul></td>
-<td align="left"></td>
 <td align="left">Specify one or more NTP servers.</td>
 </tr>
 <tr class="even">
 <td align="left">ntp_restrict</td>
 <td align="left">yes</td>
+<td align="left"><a href="https://github.com/pantarei/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
 <td align="left"><ul>
-<li>-4 default kod notrap nomodify nopeer noquery</li>
-<li>-6 default kod notrap nomodify nopeer noquery</li>
-<li>127.0.0.1</li>
-<li>::1</li>
+<li><code>[]</code></li>
+<li><code>list</code></li>
 </ul></td>
-<td align="left"></td>
 <td align="left">Access control configuration; see <a href="http://support.ntp.org/bin/view/Support/AccessRestrictions">web page</a> for details.</td>
 </tr>
 </tbody>
@@ -99,8 +93,8 @@ Role Variables
 Dependencies
 ------------
 
--   [hswong3i.apt](https://galaxy.ansible.com/detail#/role/5970)
--   [hswong3i.ufw](https://galaxy.ansible.com/detail#/role/6153)
+-   [hswong3i.apt](https://github.com/pantarei/ansible-role-apt)
+-   [hswong3i.ufw](https://github.com/pantarei/ansible-role-ufw)
 
 Example Playbook
 ----------------
@@ -112,7 +106,7 @@ Example Playbook
 License
 -------
 
--   Code released under [MIT](https://github.com/hswong3i/ansible-role-ntp/blob/master/LICENSE)
+-   Code released under [MIT](https://github.com/pantarei/ansible-role-ntp/blob/master/LICENSE)
 -   Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 Author Information
