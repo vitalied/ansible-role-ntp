@@ -2,9 +2,9 @@ Ansible Role for NTP
 ====================
 
 [![Build Status](https://travis-ci.org/pantarei/ansible-role-ntp.svg?branch=master)](https://travis-ci.org/pantarei/ansible-role-ntp)
- [![GitHub tag](https://img.shields.io/github/tag/pantarei/ansible-role-ntp.svg)](https://github.com/pantarei/ansible-role-ntp)
- [![GitHub license](https://img.shields.io/github/license/pantarei/ansible-role-ntp.svg)](https://github.com/pantarei/ansible-role-ntp/blob/master/LICENSE)
- [![Ansible Role](https://img.shields.io/ansible/role/6131.svg)](https://galaxy.ansible.com/detail#/role/6131)
+[![GitHub tag](https://img.shields.io/github/tag/pantarei/ansible-role-ntp.svg)](https://github.com/pantarei/ansible-role-ntp)
+[![GitHub license](https://img.shields.io/github/license/pantarei/ansible-role-ntp.svg)](https://github.com/pantarei/ansible-role-ntp/blob/master/LICENSE)
+[![Ansible Role](https://img.shields.io/ansible/role/6131.svg)](https://galaxy.ansible.com/detail#/role/6131)
 
 Ansible Role for NTP Management.
 
