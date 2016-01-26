@@ -6,8 +6,8 @@
     name={{ item.name }}
     state={{ item.state }}
   with_items:
-    - { name: 'ntp', state: 'latest' }
-    - { name: 'ufw', state: 'latest' }
+    - { state: 'latest', name: 'ntp' }
+    - { state: 'latest', name: 'ufw' }
   notify: restart ntp
   tags: hswong3i.ntp
 
