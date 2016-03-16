@@ -37,33 +37,6 @@ Role Variables
 </thead>
 <tbody>
 <tr class="odd">
-<td>ntp_driftfile</td>
-<td>yes</td>
-<td>/var/lib/ntp/ntp.drift</td>
-<td></td>
-<td>Specify the name and path of the frequency file.</td>
-</tr>
-<tr class="even">
-<td>ntp_filegen</td>
-<td>no</td>
-<td><a href="https://github.com/vitalied/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
-<td><ul>
-<li><code>[]</code></li>
-<li><code>list</code></li>
-</ul></td>
-<td>Configures setting of generation file set name.</td>
-</tr>
-<tr class="odd">
-<td>ntp_restrict</td>
-<td>yes</td>
-<td><a href="https://github.com/vitalied/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
-<td><ul>
-<li><code>[]</code></li>
-<li><code>list</code></li>
-</ul></td>
-<td>Access control configuration; see <a href="http://support.ntp.org/bin/view/Support/AccessRestrictions">web page</a> for details.</td>
-</tr>
-<tr class="even">
 <td>ntp_server</td>
 <td>yes</td>
 <td><a href="https://github.com/vitalied/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
@@ -73,19 +46,25 @@ Role Variables
 </ul></td>
 <td>Specify one or more NTP servers.</td>
 </tr>
-<tr class="odd">
-<td>ntp_statistics</td>
-<td>no</td>
-<td>loopstats peerstats clockstats</td>
-<td></td>
-<td>Enables writing of statistics records.</td>
-</tr>
 <tr class="even">
-<td>ntp_statsdir</td>
+<td>ntp_restrict</td>
+<td>yes</td>
+<td><a href="https://github.com/vitalied/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
+<td><ul>
+<li><code>[]</code></li>
+<li><code>list</code></li>
+</ul></td>
+<td>Access control configuration; see <a href="http://support.ntp.org/bin/view/Support/AccessRestrictions">web page</a> for details.</td>
+</tr>
+<tr class="odd">
+<td>ntp_broadcast</td>
 <td>no</td>
-<td>/var/log/ntpstats</td>
-<td></td>
-<td>Specify the directory path for files created by the statistics facility.</td>
+<td><a href="https://github.com/vitalied/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
+<td><ul>
+<li><code>[]</code></li>
+<li><code>list</code></li>
+</ul></td>
+<td>Specify one or more broadcast IPs.</td>
 </tr>
 </tbody>
 </table>
