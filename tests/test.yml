@@ -1,5 +1,5 @@
 ---
-# test file for hswong3i.ntp
+# test file for vitalied.ntp
 
 - hosts: localhost
   remote_user: root

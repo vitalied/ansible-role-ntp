@@ -1,5 +1,5 @@
 ---
-# defaults file for hswong3i.ntp
+# defaults file for vitalied.ntp
 
 ntp_driftfile: "/var/lib/ntp/ntp.drift"
 ntp_statsdir: "/var/log/ntpstats"

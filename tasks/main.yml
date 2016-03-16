@@ -1,5 +1,5 @@
 ---
-# tasks file for hswong3i.ntp
+# tasks file for vitalied.ntp
 
 - name: apt-get install
   apt:
@@ -8,7 +8,7 @@
   with_items:
     - { state: "latest", name: "ntp" }
   notify: restart ntp
-  tags: hswong3i.ntp
+  tags: vitalied.ntp
 
 - name: prepare files
   file:
@@ -20,7 +20,7 @@
   with_items:
   - { dest: "/var/log/ntpstats", owner: "ntp", group: "ntp", mode: "0755", state: "directory" }
   notify: restart ntp
-  tags: hswong3i.ntp
+  tags: vitalied.ntp
 
 - name: copy templates
   template:
@@ -32,7 +32,7 @@
   with_items:
     - { src: "etc/ntp.conf.j2", dest: "/etc/ntp.conf",  owner: "root", group: "root", mode: "0644" }
   notify: restart ntp
-  tags: hswong3i.ntp
+  tags: vitalied.ntp
 
 - name: enable service
   service:
@@ -41,4 +41,4 @@
   with_items:
     - { name: "ntp", enabled: "yes" }
   notify: restart ntp
-  tags: hswong3i.ntp
+  tags: vitalied.ntp

@@ -1,5 +1,5 @@
 ---
-# handlers file for hswong3i.ntp
+# handlers file for vitalied.ntp
 
 - name: restart ntp
   service:
