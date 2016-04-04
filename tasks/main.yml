@@ -3,8 +3,8 @@
 
 - name: apt-get install
   apt:
-    name={{ item.name }}
-    state={{ item.state }}
+    name="{{ item.name }}"
+    state="{{ item.state }}"
   with_items:
     - { state: 'latest', name: 'ntp' }
     - { state: 'latest', name: 'ufw' }
@@ -13,11 +13,11 @@
 
 - name: prepare files
   file:
-    path={{ item.path }}
-    owner={{ item.owner }}
-    group={{ item.group }}
-    mode={{ item.mode }}
-    state={{ item.state }}
+    path="{{ item.path }}"
+    owner="{{ item.owner }}"
+    group="{{ item.group }}"
+    mode="{{ item.mode }}"
+    state="{{ item.state }}"
   with_items:
   - { path: '/var/log/ntpstats', owner: 'ntp', group: 'ntp', mode: '0755', state: 'directory' }
   notify: restart ntp
@@ -25,11 +25,11 @@
 
 - name: copy templates
   template:
-    src={{ item.src }}
-    dest={{ item.dest }}
-    owner={{ item.owner }}
-    group={{ item.group }}
-    mode={{ item.mode }}
+    src="{{ item.src }}"
+    dest="{{ item.dest }}"
+    owner="{{ item.owner }}"
+    group="{{ item.group }}"
+    mode="{{ item.mode }}"
   with_items:
     - { src: 'etc/ntp.conf.j2', dest: '/etc/ntp.conf',  owner: 'root', group: 'root', mode: '0644' }
   notify: restart ntp
@@ -37,9 +37,9 @@
 
 - name: enable incomming connection
   ufw:
-    to_port={{ item.to_port }}
-    proto={{ item.proto }}
-    rule={{ item.rule }}
+    to_port="{{ item.to_port }}"
+    proto="{{ item.proto }}"
+    rule="{{ item.rule }}"
   with_items:
     - { to_port: '123', proto: 'tcp', rule: 'allow' }
   notify: restart ntp
