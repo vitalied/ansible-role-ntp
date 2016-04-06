@@ -28,64 +28,64 @@ Role Variables
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">parameter</th>
-<th align="left">required</th>
-<th align="left">default</th>
-<th align="left">choices</th>
-<th align="left">comments</th>
+<th>parameter</th>
+<th>required</th>
+<th>default</th>
+<th>choices</th>
+<th>comments</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">ntp_driftfile</td>
-<td align="left">yes</td>
-<td align="left">/var/lib/ntp/ntp.drift</td>
-<td align="left"></td>
-<td align="left">Specify the name and path of the frequency file.</td>
+<td>ntp_driftfile</td>
+<td>yes</td>
+<td>/var/lib/ntp/ntp.drift</td>
+<td></td>
+<td>Specify the name and path of the frequency file.</td>
 </tr>
 <tr class="even">
-<td align="left">ntp_statsdir</td>
-<td align="left">no</td>
-<td align="left">/var/log/ntpstats</td>
-<td align="left"></td>
-<td align="left">Specify the directory path for files created by the statistics facility.</td>
+<td>ntp_statsdir</td>
+<td>no</td>
+<td>/var/log/ntpstats</td>
+<td></td>
+<td>Specify the directory path for files created by the statistics facility.</td>
 </tr>
 <tr class="odd">
-<td align="left">ntp_statistics</td>
-<td align="left">no</td>
-<td align="left">loopstats peerstats clockstats</td>
-<td align="left"></td>
-<td align="left">Enables writing of statistics records.</td>
+<td>ntp_statistics</td>
+<td>no</td>
+<td>loopstats peerstats clockstats</td>
+<td></td>
+<td>Enables writing of statistics records.</td>
 </tr>
 <tr class="even">
-<td align="left">ntp_filegen</td>
-<td align="left">no</td>
-<td align="left"><a href="https://github.com/pantarei/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
-<td align="left"><ul>
+<td>ntp_filegen</td>
+<td>no</td>
+<td><a href="https://github.com/pantarei/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
+<td><ul>
 <li><code>[]</code></li>
 <li><code>list</code></li>
 </ul></td>
-<td align="left">Configures setting of generation file set name.</td>
+<td>Configures setting of generation file set name.</td>
 </tr>
 <tr class="odd">
-<td align="left">ntp_server</td>
-<td align="left">yes</td>
-<td align="left"><a href="https://github.com/pantarei/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
-<td align="left"><ul>
+<td>ntp_server</td>
+<td>yes</td>
+<td><a href="https://github.com/pantarei/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
+<td><ul>
 <li><code>[]</code></li>
 <li><code>list</code></li>
 </ul></td>
-<td align="left">Specify one or more NTP servers.</td>
+<td>Specify one or more NTP servers.</td>
 </tr>
 <tr class="even">
-<td align="left">ntp_restrict</td>
-<td align="left">yes</td>
-<td align="left"><a href="https://github.com/pantarei/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
-<td align="left"><ul>
+<td>ntp_restrict</td>
+<td>yes</td>
+<td><a href="https://github.com/pantarei/ansible-role-ntp/blob/master/defaults/main.yml">defaults/main.yml</a></td>
+<td><ul>
 <li><code>[]</code></li>
 <li><code>list</code></li>
 </ul></td>
-<td align="left">Access control configuration; see <a href="http://support.ntp.org/bin/view/Support/AccessRestrictions">web page</a> for details.</td>
+<td>Access control configuration; see <a href="http://support.ntp.org/bin/view/Support/AccessRestrictions">web page</a> for details.</td>
 </tr>
 </tbody>
 </table>
@@ -112,6 +112,6 @@ Author Information
 ------------------
 
 -   Wong Hoi Sing Edison
-    -   <https://twitter.com/hswong3i>
-    -   <https://github.com/hswong3i>
+    -   <a href="https://twitter.com/hswong3i" class="uri" class="uri">https://twitter.com/hswong3i</a>
+    -   <a href="https://github.com/hswong3i" class="uri" class="uri">https://github.com/hswong3i</a>
 
