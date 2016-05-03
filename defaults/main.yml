@@ -1,9 +1,9 @@
 ---
 # defaults file for hswong3i.ntp
 
-ntp_driftfile: /var/lib/ntp/ntp.drift
-ntp_statsdir: /var/log/ntpstats
-ntp_statistics: loopstats peerstats clockstats
+ntp_driftfile: "/var/lib/ntp/ntp.drift"
+ntp_statsdir: "/var/log/ntpstats"
+ntp_statistics: "loopstats peerstats clockstats"
 ntp_filegen: [
   "loopstats file loopstats type day enable",
   "peerstats file peerstats type day enable",
