@@ -12,13 +12,13 @@
 
 - name: prepare files
   file:
-    path: "{{ item.path }}"
+    dest: "{{ item.path }}"
     owner: "{{ item.owner }}"
     group: "{{ item.group }}"
     mode: "{{ item.mode }}"
     state: "{{ item.state }}"
   with_items:
-  - { path: "/var/log/ntpstats", owner: "ntp", group: "ntp", mode: "0755", state: "directory" }
+  - { dest: "/var/log/ntpstats", owner: "ntp", group: "ntp", mode: "0755", state: "directory" }
   notify: restart ntp
   tags: hswong3i.ntp
 
