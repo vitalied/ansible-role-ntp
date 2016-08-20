@@ -3,5 +3,7 @@
 
 - name: restart ntp
   service:
-    name: "ntp"
-    state: "restarted"
+    name: "{{ item.name }}"
+    state: "{{ item.state }}"
+  with_items:
+    - { name: "ntp", state: "restarted" }
